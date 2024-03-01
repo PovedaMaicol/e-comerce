@@ -6,7 +6,7 @@ const icono = document.querySelector('.bx-toggle-left');
 
 const handleDark = () => {
   body.classList.toggle('dark');
-  // icono.classList.toggle('bx-toggle-right');
+  icono.classList.toggle('bx-toggle-right');
   
 }
 
