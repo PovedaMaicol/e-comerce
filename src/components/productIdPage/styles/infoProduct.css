@@ -1,0 +1,83 @@
+
+.info_caracteristics h2 {
+    font-size: medium;
+    color: gray;
+
+}
+.info_caracteristics h3,
+.info_caracteristics h3 {
+    padding-left: 10px;
+}
+
+.info_quantity {
+    width: 100%;
+    background-color: aqua;
+}
+
+.info_caracteristics {
+    width: 90%;
+
+}
+
+.caracteristics_price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.li_price {
+    width: 50%;
+   
+}
+
+.li_quantity {
+    width: 45%;
+}
+
+.ul_quantity {
+    display: flex;
+    justify-content: space-between;
+    height: 1.6em;
+}
+
+.button_less,
+.button_plus {
+    width: 30%;
+    background: none;
+    border:  0.2px solid gray;
+    font-weight: 700;
+ 
+    text-align: center;
+  
+}
+.button_quantity {
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    border:  1px solid gray;
+}
+.button_quantity span {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.button_add {
+    width: 100%;
+    background-color: #FC6736;;
+    height: 3em;
+    text-align: center;
+    font-weight: 700;
+    font-size:medium;
+   
+}
+
+.button_add i {
+    margin-left: 0.5em;
+}
+
+
+/* .info_caracteristics p {
+    font-size: 14px;
+} */

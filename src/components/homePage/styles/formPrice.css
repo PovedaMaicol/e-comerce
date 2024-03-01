@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.form_filter {
+    width: 100%;
+ 
+    height: 2em;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_filter input{
+    width: 70%;
+}
+
+.form_filter label {
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+}
+
+.form_form {
+    height: 20vh;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.formContainer button {
+    width: 33%;
+   margin-left: 67%;
+   height: 2em;
+   background-color: #FC6736;
+
+}
