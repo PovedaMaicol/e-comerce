@@ -84,10 +84,11 @@ const HomePage = () => {
         <FormPrice 
         setFormValue={setFormValue}
         />
-            <SelectCategory
+        <SelectCategory
         setSelectValue={setSelectValue}
         />
          </div>
+         
       
        
         <section className='productsContainer'>

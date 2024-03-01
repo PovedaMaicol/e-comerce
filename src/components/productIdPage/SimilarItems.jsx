@@ -2,7 +2,7 @@ import React from 'react'
 import useFetch from '../../hooks/useFetch';
 import { useEffect } from 'react';
 import ProductCard from '../homePage/ProductCard';
-
+import './styles/similarItems.css'
 
 const SimilarItems = ({categoryId, prodId}) => {
 
@@ -29,7 +29,8 @@ const SimilarItems = ({categoryId, prodId}) => {
     console.log(categoryId)
   return (
     <section>
-    <h2>SimilarItems</h2>
+        <br/>
+    <h3>SimilarItems</h3>
         <div className='productsContainer'>
             {
                 productsByCategory?.filter(cbFilter).map(prod => (

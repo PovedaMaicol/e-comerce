@@ -61,7 +61,8 @@ const InfoProduct = ({productId}) => {
     </div>
     <br/>
     <button className='button_add' onClick={handleAddToCart}>Add to cart<i class='bx bx-cart'></i></button>
-   
+    <br/>
+    <br/>
     <p>{productId?.description}</p>
     <div>
         
