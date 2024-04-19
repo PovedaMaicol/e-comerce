@@ -16,6 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    width: 100%;
+    border-radius:15px 15px 0 0 ;
+    margin: 0;
+    padding: 0;
 }
 
 .productCard_img img {
@@ -43,6 +48,9 @@
 
 .productCard hr {
     width: 100%;
+    padding: 0;
+    margin: 0;
+  
 }
 
 .productCard_info {

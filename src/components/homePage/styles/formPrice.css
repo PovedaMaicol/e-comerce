@@ -30,8 +30,19 @@
 
 .formContainer button {
     width: 33%;
-   margin-left: 67%;
+
    height: 2em;
    background-color: #FC6736;
 
+}
+
+.container-fp {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 30px;
+    margin-left: 30%;
+    justify-content: space-between;
+
+    align-items: center;
 }

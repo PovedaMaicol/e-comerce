@@ -8,11 +8,14 @@
 
 } 
 
-body.dark{
+body{
   background-color: black;
   color: white;
 }
-
+.dark {
+  background-color: white;
+  color: black;
+}
 img {
   display: inline-block;
   max-width: 100%;

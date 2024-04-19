@@ -12,27 +12,15 @@
 }
 
 .filtersContainer {
-    background: #fff;
-    color: black;
-    bottom: 0;
-    box-shadow: 0 8px 24px hsla(210,8%,62%,.2);
-    overflow: auto;
-    padding: 10px 13px 50px;
-    position: fixed;
-    right: 0;
-    top: 0;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -webkit-transform-origin: top right;
-    transform-origin: top right;
-    transition: all .7s ease;
-    width: 300px;
-    z-index: 99;
+display: none;
 }
 
 .open {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+
+
 }
 
 .search_home {
@@ -90,7 +78,7 @@
 }
 
 .bx-x-circle {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .filtersContainer h3 {

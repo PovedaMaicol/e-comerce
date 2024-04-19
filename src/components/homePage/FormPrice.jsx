@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import './styles/formPrice.css';
+import SelectCategory from './SelectCategory';
 
 
 const FormPrice = ({setFormValue}) => {
@@ -29,8 +30,10 @@ const FormPrice = ({setFormValue}) => {
                 <label htmlFor='to'>To</label>
                 <input {...register('to')} id='to' type='text' />
             </div>
+            <div className='container-fp'>
             <button>Filter Price</button>
-            
+            <SelectCategory/>
+            </div>
 
         </form>
     </div>

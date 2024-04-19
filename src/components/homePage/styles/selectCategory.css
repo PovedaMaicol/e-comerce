@@ -1,6 +1,12 @@
 .select_container {
 
+
+/* position:absolute; */
+bottom: 10px;
+width: 100px;
+
+
 }
 .select_home {
-    height: 100%;
+ height: inherit;
 }

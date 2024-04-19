@@ -4,7 +4,6 @@ import { getProductsThunk } from '../store/slices/products.slice';
 import ProductCard from '../components/homePage/ProductCard';
 import './styles/homePage.css';
 import { useState } from 'react';
-import SelectCategory from '../components/homePage/SelectCategory';
 import FormPrice from '../components/homePage/FormPrice';
 const ocultar = document.querySelector('.filtersContainer');
 console.log(ocultar)
@@ -13,6 +12,14 @@ console.log(ocultar)
 
 
 const HomePage = () => {
+
+    const [isFilter, setIsFilter] = useState(false)
+    const handleHide = () => {
+
+        setIsFilter(!isFilter)
+        // ocultar.classList.toggle('open');
+        // console.log(ocultar)
+    }
 
     const [formValue, setFormValue] = useState({
         from: 0,
@@ -33,10 +40,7 @@ const HomePage = () => {
     const handleSearch = () => {
         setProductName(textInput.current.value.toLowerCase().trim());
     }
-    const handleHide = () => {
-        ocultar.classList.toggle('open');
-        console.log(ocultar)
-    }
+ 
     // console.log(productName);
     // console.log(products);
 
@@ -71,7 +75,7 @@ const HomePage = () => {
         <i className='bx bx-filter-alt' onClick={handleHide}><a className='sub_filter'> Filters</a></i>
         </div>
 
-        <div className='filtersContainer'>
+       <div className={ isFilter ? 'open' : 'filtersContainer'}>
             <div className='container_btn'>
             <i className='bx bx-x-circle' onClick={handleHide}></i>
             </div>
@@ -80,16 +84,16 @@ const HomePage = () => {
             <br/>
             <h4>Price</h4>
 
-        
+     
         <FormPrice 
         setFormValue={setFormValue}
         />
-        <SelectCategory
+        {/* <SelectCategory
         setSelectValue={setSelectValue}
-        />
-         </div>
-         
-      
+        /> */}
+     <br/>
+  <hr/>
+      </div>
        
         <section className='productsContainer'>
         {
